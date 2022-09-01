@@ -1,6 +1,6 @@
 {
   "name": "mui-text-editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Material-UI Rich Text Editor based on Draft-JS and MUI-RTE projects",
   "keywords": [
     "material-ui",
