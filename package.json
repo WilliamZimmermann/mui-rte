@@ -1,7 +1,7 @@
 {
-  "name": "mui-rte",
+  "name": "mui-text-editor",
   "version": "1.0.0",
-  "description": "Material-UI Rich Text Editor and Viewer",
+  "description": "Material-UI Rich Text Editor based on Draft-JS and MUI-RTE projects",
   "keywords": [
     "material-ui",
     "mui",
