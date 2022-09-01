@@ -13,19 +13,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/WilliamZimmermann/mui-rte.git"
+    "url": "https://github.com/WilliamZimmermann/mui-text-editor.git"
   },
   "bugs": {
-    "url": "https://github.com/WilliamZimmermann/mui-rte/issues"
+    "url": "https://github.com/WilliamZimmermann/mui-text-editor/issues"
   },
-  "homepage": "https://github.com/WilliamZimmermann/mui-rte#readme",
+  "homepage": "https://github.com/WilliamZimmermann/mui-text-editor#readme",
   "main": "index.js",
   "scripts": {
     "serve": "cross-env webpack-dev-server --mode development",
     "build": "tsc",
     "watch": "tsc --watch"
   },
-  "author": "Erik Lopez",
+  "author": "William Zimmermann",
   "license": "MIT",
   "devDependencies": {
     "@emotion/react": "^11.4.1",
