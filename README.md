@@ -33,7 +33,7 @@ Install the peer dependencies: `@mui/material`, `@mui/icons-material`, `@mui/sty
 
 ```js
 import { createTheme, ThemeProvider } from '@mui/material/styles'
-import MUIRichTextEditor from 'mui-rte'
+import MUIRichTextEditor from 'mui-text-editor'
 
 const myTheme = createTheme({
     // Set up your custom MUI theme here
@@ -50,7 +50,7 @@ ReactDOM.render(
 You can load default content as the following example. The value should be a stringified `RawDraftContentState` object:
 
 ```js
-import MUIRichTextEditor from 'mui-rte'
+import MUIRichTextEditor from 'mui-text-editor'
 
 const data = getContentStateAsStringFromSomewhere()
 
@@ -82,7 +82,7 @@ You can define your custom inline styles, blocks, atomic blocks and callback act
 This sample adds a control to change the background color and font color of the typed or selected text:
 
 ```js
-import MUIRichTextEditor from 'mui-rte'
+import MUIRichTextEditor from 'mui-text-editor'
 import InvertColorsIcon from '@mui/icons-material/InvertColors'
 
 <MUIRichTextEditor 
@@ -106,7 +106,7 @@ import InvertColorsIcon from '@mui/icons-material/InvertColors'
 This sample adds a block to the editor based on a `React Element`:
 
 ```js
-import MUIRichTextEditor from 'mui-rte'
+import MUIRichTextEditor from 'mui-text-editor'
 import TableChartIcon from '@mui/icons-material/TableChart'
 
 const MyBlock = (props) => {
@@ -152,7 +152,7 @@ Check [this sample](https://github.com/WilliamZimmermann/mui-text-editor/blob/ma
 This sample adds a control that will trigger a custom callback function to clear the editor state:
 
 ```js
-import MUIRichTextEditor from 'mui-rte'
+import MUIRichTextEditor from 'mui-text-editor'
 import DoneIcon from '@mui/icons-material/Done'
 import { EditorState } from 'draft-js'
 
@@ -184,7 +184,7 @@ You can define autocomplete strategies to present suggested content lists based 
 This is an example to show emoji suggestions when the user start typing a text like ':face', ':joy', or ':grin':
 
 ```js
-import MUIRichTextEditor from 'mui-rte'
+import MUIRichTextEditor from 'mui-text-editor'
 
 const emojis = [
     {
@@ -231,7 +231,7 @@ You can define custom decorators to apply styles and/or functionality based on a
 To add some functionality when a user inputs a `#hashtag` use the following example. In this case, everytime the user inputs a word starting with a `#` character it will be automatically converted into a styled link:
 
 ```js
-import MUIRichTextEditor from 'mui-rte'
+import MUIRichTextEditor from 'mui-text-editor'
 
 const MyHashTagDecorator = (props) => {
     const hashtagUrl = "http://myurl/" + props.decoratedText
@@ -263,7 +263,7 @@ const MyHashTagDecorator = (props) => {
 The editor includes an inline toolbar option which renders a pop-up inside the editor area when the user makes a selection. The inline toolbar supports user defined controls. Notice that only `inline` type controls will be rendered. The controls displayed on the main toolbar can be different from the ones in the inline toolbar. You can also hide the main toolbar and just enable the inline toolbar.
 
 ```js
-import MUIRichTextEditor from 'mui-rte'
+import MUIRichTextEditor from 'mui-text-editor'
 
 <MUIRichTextEditor 
     label="Type something here..."
@@ -277,7 +277,7 @@ You can style the editor using the `Material-UI` theming feature. First create a
 
 ```js
 import { createMuiTheme, MuiThemeProvider } from '@mui/material/styles'
-import MUIRichTextEditor from 'mui-rte'
+import MUIRichTextEditor from 'mui-text-editor'
 
 const defaultTheme = createMuiTheme()
 
