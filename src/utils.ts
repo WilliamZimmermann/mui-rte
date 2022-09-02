@@ -1,6 +1,6 @@
 import {
     EditorState, DraftBlockType, ContentBlock, ContentState,
-    Modifier, SelectionState, getVisibleSelectionRect, DraftStyleMap
+    Modifier, getVisibleSelectionRect, DraftStyleMap, SelectionState
 } from 'draft-js'
 import Immutable from 'immutable'
 import { TCustomControl } from './components/Toolbar'
@@ -46,7 +46,7 @@ const getSelectionInfo = (editorState: EditorState): TSelectionInfo => {
  * Remove a block from the ContentState
  */
 const removeBlockFromMap = (editorState: EditorState, block: ContentBlock): ContentState => {
-    const contentState = editorState.getCurrentContent()
+    const contentState = editorState.getCurrentContent();
     const removeBlockContentState = Modifier.removeRange(
         contentState,
         new SelectionState({
@@ -56,12 +56,12 @@ const removeBlockFromMap = (editorState: EditorState, block: ContentBlock): Cont
             focusOffset: block.getLength(),
         }),
         'backward'
-    )
-    const blockMap = removeBlockContentState.getBlockMap().delete(block.getKey())
+    );
+    const blockMap = removeBlockContentState.getBlockMap().delete(block.getKey());
     return removeBlockContentState.merge({
         blockMap,
         selectionAfter: contentState.getSelectionAfter()
-    }) as ContentState
+    }) as ContentState;
 }
 
 const atomicBlockExists = (name: string, controls?: TCustomControl[]) => {
