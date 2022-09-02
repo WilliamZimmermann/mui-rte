@@ -1,6 +1,6 @@
 {
   "name": "mui-text-editor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Material-UI Rich Text Editor based on Draft-JS and MUI-RTE projects",
   "author": "William Zimmermann",
   "license": "MIT",
@@ -33,7 +33,7 @@
     "@mui/icons-material": "5.10.3",
     "@mui/material": "5.10.3",
     "@mui/styles": "5.10.3",
-    "@types/react": "18.0.18",
+    "@types/react": "18.0.12",
     "@types/react-dom": "18.0.6",
     "@webpack-cli/serve": "1.7.0",
     "@babel/core": "7.18.13",
